@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>APIsSecures</name>
+    </assembly>
+    <members>
+        <member name="M:APIsSecures.APIsToken.ConfigureSwaggerOptions.#ctor(Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider)">
+            <summary>
+            Initializes a new instance of the <see cref="T:APIsSecures.APIsToken.ConfigureSwaggerOptions"/> class.
+            </summary>
+            <param name="provider">The <see cref="T:Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider">provider</see> used to generate Swagger documents.</param>
+        </member>
+        <member name="M:APIsSecures.APIsToken.ConfigureSwaggerOptions.Configure(Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenOptions)">
+            <inheritdoc />
+        </member>
+        <member name="M:APIsSecures.APIsToken.SwaggerDefaultValues.Apply(Microsoft.OpenApi.Models.OpenApiOperation,Swashbuckle.AspNetCore.SwaggerGen.OperationFilterContext)">
+            <summary>
+            Applies the filter to the specified operation using the given context.
+            </summary>
+            <param name="operation">The operation to apply the filter to.</param>
+            <param name="context">The current operation filter context.</param>
+        </member>
+        <member name="M:APIsSecures.Controllers.LoginController.Get(System.String,System.String)">
+            <summary>
+            login to get token before execute APIs
+            </summary>
+            <param name="user"></param>
+            <param name="pwd"></param>
+            <returns>return token</returns>
+        </member>
+        <member name="M:APIsSecures.Controllers.LoginController.Post(APIsSecures.Models.LoginModel)">
+            <summary>
+            login to get token before execute APIs
+            </summary>
+            <param name="user"></param>
+            <param name="pwd"></param>
+            <param name="data"></param>
+            <returns>return token</returns>
+        </member>
+    </members>
+</doc>
